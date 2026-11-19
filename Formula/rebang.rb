@@ -5,21 +5,21 @@
 class Rebang < Formula
   desc "今日热榜（rebang.today）官方命令行客户端"
   homepage "https://rebang.today"
-  version "0.1.3"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.1.3/rebang_0.1.3_darwin_amd64.tar.gz"
-      sha256 "827ea68e49498a7524baac6a57f66467097adf1095ec92065eef96d2b0e52bb1"
+      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.2.0/rebang_0.2.0_darwin_amd64.tar.gz"
+      sha256 "c56bc0b1283ecf53276afe7231700897c30c3f9c6a8d173f745ec2330a1c6a3a"
 
       define_method(:install) do
         bin.install "rebang"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.1.3/rebang_0.1.3_darwin_arm64.tar.gz"
-      sha256 "b5ff3109b69c0de229b61d63877e75988e3e16e084362547bf4b861087371f57"
+      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.2.0/rebang_0.2.0_darwin_arm64.tar.gz"
+      sha256 "efcd10a41f0de5f256bfbce2ce3be5096bef105167e199975d5e8b7e706f2020"
 
       define_method(:install) do
         bin.install "rebang"
@@ -29,15 +29,15 @@ class Rebang < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.1.3/rebang_0.1.3_linux_amd64.tar.gz"
-      sha256 "c8a09cd8eaaaab7147eaf28b2b58c9e6d353b8aeaafde3ca768a5be4c1980d37"
+      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.2.0/rebang_0.2.0_linux_amd64.tar.gz"
+      sha256 "20c9e9a41e709b955cc835794094f1b0cbcdad83fdedfd8028f721a9ac470c0f"
       define_method(:install) do
         bin.install "rebang"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.1.3/rebang_0.1.3_linux_arm64.tar.gz"
-      sha256 "6a8147e57c09ef6e9b04634be72b57a3d37fd0b227150fcb1b69e96780b49392"
+      url "https://github.com/rebang-today/rebang-cli/releases/download/v0.2.0/rebang_0.2.0_linux_arm64.tar.gz"
+      sha256 "890c50dda9f88946765fab35538ecc81f383d199ee439f62b119faef7857383e"
       define_method(:install) do
         bin.install "rebang"
       end
